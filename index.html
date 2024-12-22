@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bianca Ardeleanu">
+  <meta name="keywords" content="wellness center, cabana, vacanta, relaxare, masaj, sauna">
+  <meta name="description"
+    content="Evergreen Wellness Center oferă servicii de relaxare și revitalizare pentru minte, corp și suflet. Descoperiți un loc de refugiu și echilibru perfect în natura.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Evergreen Wellness Center</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <style>
+    .informatii p {
+      font-size: 1.3em;
+      margin: 20px;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-style: italic;
+      font-weight: bold;
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+      background-color: #f9cee6;
+    }
+
+    .carousel-inner img {
+      height: 600px;
+      object-fit: cover;
+    }
+
+
+    .card-despre {
+      width: 32%;
+      padding: 30px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .card-despre img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .card-despre p {
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .card-despre h3 {
+      font-size: 1.4em;
+      color: #123647;
+      margin-bottom: 10px;
+    }
+
+    .accordion-body {
+      border: 1px solid #b3cff7;
+      margin: 20px;
+      padding: 15px;
+    }
+
+    .accordion {
+      padding: 30px;
+    }
+
+    .card-title {
+      font-size: 20px;
+    }
+
+    .card-bodyfaq {
+      padding: 20px;
+    }
+
+    .sm {
+      height: 50px;
+    }
+
+    .social {
+      margin: 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 60px;
+      padding-top: 20px;
+      border: 10px double #f9cee6
+    }
+
+    footer ul {
+      padding: 0;
+    }
+
+    footer li {
+      display: inline;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary main-navbar sticky-top" style="padding: 20px;">
+      <div class="container-fluid">
+        <h1 id="index.html"> <a class="navbar-brand" href="index.html"> Evergreen Wellness Center
+            <img src="logo.png" alt="Logo cu o frunza" width="30" height="24" class="d-inline-block align-text-top"></a>
+        </h1>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Despre">Despre noi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Servicii">Servicii</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#FAQ">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacte">Contact</a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carousel" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="munte.jpg" class="d-block w-100 img-fluid" alt="peisaj de munte cu o femeie intr-o piscină">
+        </div>
+        <div class="carousel-item">
+          <img src="primavara.jpg" class="d-block w-100 img-fluid" alt="o casă cu o grădină plină de flori">
+        </div>
+        <div class="carousel-item">
+          <img src="masajflori.jpg" class="d-block w-100 img-fluid"
+            alt="spatele întins al unei persone, pe care este pus o creangă cu flori">
+        </div>
+        <div class="carousel-item">
+          <img src="massage-woman.jpg" class="d-block w-100 img-fluid "
+            alt="o femeie relaxată care sta pe o masă întinsa la masaj">
+        </div>
+        <div class="carousel-item">
+          <img src="maini.jpg" class="d-block w-100 img-fluid" alt="masaj la măini">
+        </div>
+        <div class="carousel-item">
+          <img src="mascafata.jpg" class="d-block w-100 img-fluid "
+            alt="un bărbat care se relaxează cu o mască pe față">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+
+  <div class="container my-5">
+    <div class="informatii">
+      <h2>Bine ați venit la Evergreen Wellness Center!</h2>
+      <p>Explorați lumea relaxării și a echilibrului interior la Evergreen Wellness Center, unde sănătatea fizică și
+        mentală sunt prioritățile noastre.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="bomba.jpg" class="card-img-top" alt="spumă verde cu mov">
+          <div class="card-body">
+            <h3 class="card-title">Despre Evergreen</h3>
+            <p class="card-text">Cunoaște povestea noastră și valorile care ne ghidează în a crea o experiență de
+              wellness
+              unică pentru tine.</p>
+            <a href="#Desprenoi" class="btn btn-primary">Despre noi</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="sapunel.jpg" class="card-img-top" alt="săpunuri solide colorate">
+          <div class="card-body">
+            <h3 class="card-title">Descoperă Serviciile Noastre</h3>
+            <p class="card-text">Explorează gama noastră diversificată de servicii pentru relaxare, revitalizare și
+              sănătate, special concepute pentru a-ți îmbunătăți bunăstarea.</p>
+            <a href="#Servicii" class="btn btn-primary">Vezi Serviciile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="boomba.jpg" class="card-img-top" alt="spumă colorată">
+          <div class="card-body">
+            <h3 class="card-title">Opțiunile tale</h3>
+            <p class="card-text">Avem pachete personalizate pentru toate nevoile tale. Descoperă opțiunile noastre
+              flexibile
+              și alege ce ți se potrivește.</p>
+            <a href="#Tarife" class="btn btn-primary">Vezi Tarife</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h2 id="Despre">Despre Noi</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Povestea Noastra</h3>
+            <p class="card-text">Totul a început cu dorința de a crea un spațiu dedicat armoniei dintre minte, trup și
+              suflet. Evergreen Wellness Center s-a născut din pasiunea noastră pentru wellness și din convingerea că
+              fiecare persoană merită momente de liniște și revitalizare. Situat într-un peisaj idilic, centrul nostru
+              îmbină elementele naturii cu cele mai bune practici de relaxare și recuperare.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-3">
+        <div class="card h-100">
+          <img src="castravete.jpg" class="card-img-top img-fluid"
+            alt="o femeie întinsă pe spate cu doua felii de castravete pe ochi">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Valorile noastre</h3>
+            <p class="card-text">Valorile noastre sunt ghidate de profesionalism, empatie și inovație. Ne dedicăm să
+              oferim
+              servicii de cea mai înaltă calitate și să înțelegem nevoile clienților noștri. Integritatea și
+              transparența
+              stau la baza tuturor interacțiunilor noastre. Ne angajăm să fim responsabili și să adoptăm practici
+              sustenabile care contribuie la un viitor mai bun.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-5">
+  <h2 id="Servicii">Servicii</h2>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="masaj.jpg" class="card-img-top" alt="Masaj relaxant la picioare">
+          <div class="card-body">
+            <h3 class="card-title">Masaj Relaxant</h3>
+            <p class="card-text">Oferim masaj relaxant pentru eliminarea stresului și tensiunii.</p>
+            <p class="card-text">Preț: 150 RON/ședință</p>
+            <span class="badge bg-success">Disponibil</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="sauna.jpg" class="card-img-top" alt="o camera de sauna">
+          <div class="card-body">
+            <h3 class="card-title">Saună Finlandeză</h3>
+            <p class="card-text">Experiență completă de detoxifiere și relaxare.</p>
+            <p class="card-text">Preț: 100 RON/oră</p>
+            <span class="badge bg-danger">Ofertă Specială</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="piscina.jpg" class="card-img-top" alt="o piscină interioară">
+          <div class="card-body">
+            <h3 class="card-title">Piscină Interioară</h3>
+            <p class="card-text">Relaxează-te în piscina noastră cu apă încălzită.</p>
+            <p class="card-text">Preț: 50 RON/oră</p>
+            <span class="badge bg-primary">Nou</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="cuplu.jpg" class="card-img-top"
+            alt="un cuplu cu o femeie si un bărbat care stau împreuna într-un pat râzând">
+          <div class="card-body">
+            <h3 class="card-title">Pachet Deluxe</h3>
+            <p class="card-text">Include masaj, saună și acces la piscină.</p>
+            <p class="card-text">Preț: 300 RON/pachet</p>
+            <span class="badge bg-warning text-dark">Reducere 20%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="accordion" id="acordeon">
+      <div class="accordion-item">
+        <h3 class="accordion-header"> <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Masaj Relaxant </button>
+        </h3>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#acordeon">
+          <div class="accordion-body"> Descoperă arta relaxării cu sesiunea noastră de masaj relaxant. Terapie de masaj
+            cu
+            tehnici delicate și mișcări fluide, menite să elibereze tensiunea și să îți ofere o stare profundă de calm
+            și
+            bineființă. Perfect pentru cei care doresc să se deconecteze de la stresul cotidian și să își regăsească
+            echilibrul interior. </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Sauna Finlandeză </button>
+        </h3>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+          <div class="accordion-body"> Încălzește-ți simțurile și revitalizează-ți corpul în sauna noastră finlandeză.
+            Această experiență tradițională ajută la detoxifiere, îmbunătățește circulația și promovează relaxarea
+            totală.
+            Cu o atmosferă autentică și temperaturi ideale, sauna finlandeză este locul perfect pentru a-ți regăsi
+            vitalitatea. </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Piscină interioară
+          </button> </h3>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+          <div class="accordion-body"> Înoată și relaxează-te în piscina noastră interioară, un refugiu perfect
+            indiferent
+            de vreme. Apa cristalină și temperatura plăcută creează un mediu relaxant pentru a te destinde, a face
+            exerciții ușoare sau pur și simplu a te bucura de un moment de liniște. O oază de calm în mijlocul orașului.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Pachet Deluxe </button>
+        </h3>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+          <div class="accordion-body"> Experimentează luxul suprem cu pachetul nostru Delux, care combină toate
+            serviciile
+            noastre premium: masaj relaxant, sauna finlandeză și acces la piscina interioară. Acest pachet este gândit
+            pentru a-ți oferi o evadare completă și o reîncărcare totală a bateriilor. Răsfață-te și redescoperă bucuria
+            relaxării într-un mediu de cinci stele. Simte magia relaxării și permite-ți să fii răsfățat cu serviciile
+            noastre de top. </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h2 id="FAQ">Întrebări Frecvente (FAQ)</h2>
+    <div class="container faq-container my-5">
+      <div class="row">
+        <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+          <div class="faq-card card">
+            <div class="faq-card-header card-header"> FAQ </div>
+            <div class="faq-card-body card-body">
+              <h3 class="card-title">Trebuie să fac o rezervare în avans?</h3>
+              <p class="card-text">Da, este recomandat să faceți o rezervare în avans pentru a vă asigura că veți avea
+                locul dorit la ora preferată. Rezervările se pot face online sau prin telefon.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+          <div class="faq-card card">
+            <div class="faq-card-header card-header"> FAQ </div>
+            <div class="faq-card-body card-body">
+              <h3 class="card-title">Ce tipuri de masaje oferiți?</h3>
+              <p class="card-text">Oferim o gamă variată de masaje, inclusiv masaj relaxant, masaj terapeutic și masaj
+                de
+                aromaterapie. Fiecare tip de masaj este adaptat nevoilor și preferințelor individuale.</p>
+              <a href="#Servicii" class="btn btn-primary">Servicii</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+          <div class="faq-card card">
+            <div class="faq-card-header card-header"> FAQ </div>
+            <div class="faq-card-body card-body">
+              <h3 class="card-title">Care este politica de anulare?</h3>
+              <p class="card-text">Anulările pot fi făcute cu cel puțin 24 de ore înainte de ora programată pentru a
+                evita
+                orice penalizare. Pentru detalii complete despre politica de anulare, vă rugăm să consultați termenii și
+                condițiile noastre.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+          <div class="faq-card card">
+            <div class="faq-card-header card-header"> FAQ </div>
+            <div class="faq-card-body card-body">
+              <h3 class="card-title">Există facilități pentru persoane cu dizabilități?</h3>
+              <p class="card-text">Da, centrul nostru este echipat cu facilități accesibile pentru persoanele cu
+                dizabilități. Dacă aveți nevoie de asistență suplimentară, vă rugăm să ne informați în avans.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+          <div class="faq-card card">
+            <div class="faq-card-header card-header"> FAQ </div>
+            <div class="faq-card-body card-body">
+              <h3 class="card-title">Ce ar trebui să aduc pentru sesiunea de masaj?</h3>
+              <p class="card-text">Nu este necesar să aduceți nimic special. Noi oferim toate materialele necesare,
+                inclusiv prosoape, uleiuri și alte consumabile. Vă recomandăm să veniți în haine confortabile.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <h2 id="Contact">Contact</h2>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseOne">
+            Informații de Contact
+          </button>
+        </h3>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+          data-bs-parent="#accordionPanelsStayOpenExample">
+          <div class="accordion-body">
+            <p><strong>Adresă:</strong> Str. Natura, nr. 10, Evergreen Village</p>
+            <p><strong>Telefon:</strong> +40 123 456 789</p>
+            <p><strong>Email:</strong> evergreen@yahoo.com</p>
+            <p><strong>Program:</strong></p>
+            <ul>
+              <li>Luni - Vineri: 9:00 - 18:00</li>
+              <li>Sâmbătă: 10:00 - 14:00</li>
+              <li>Duminică: Închis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo">
+            Localizare
+          </button>
+        </h3>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+          data-bs-parent="#accordionPanelsStayOpenExample">
+          <div class="accordion-body">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27015.98788687812!2d-6.708397096135282!3d61.63881237690221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1733272152623!5m2!1sro!2sro"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree">
+            Urmărește-ne
+          </button>
+        </h3>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+          data-bs-parent="#accordionPanelsStayOpenExample">
+          <div class="accordion-body text-center">
+            <a href="https://facebook.com" target="_blank" class="social">
+              <img class="sm" src="facebook.png" alt="facebook icon"> Facebook
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social">
+              <img class="sm" src="instagram.png" alt="instagram icon"> Instagram
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="social">
+              <img class="sm" src="tiktok.png" alt="tiktok icon"> TikTok </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <p class="mb-2">© 2024 Evergreen Wellness Center | Toate drepturile rezervate.</p>
+          <p>Contact: <a href="mailto:evergreen@yahoo.com" class="text-decoration-none">evergreen@yahoo.com</a> |
+            Telefon: <a href="tel:+40712345678" class="text-decoration-none">+40 123 456 789</a></p>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item me-3">
+              <a href="https://facebook.com" target="_blank" class="text-decoration-none">Facebook</a>
+            </li>
+            <li class="list-inline-item me-3">
+              <a href="https://instagram.com" target="_blank" class="text-decoration-none">Instagram</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com" target="_blank" class="text-decoration-none">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
